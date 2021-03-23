@@ -124,4 +124,9 @@ def pgcli_bindings(pgcli):
         """Move down in history."""
         event.current_buffer.history_forward(count=event.arg)
 
+    @kb.add("escape", "e")
+    def _(event):
+        """Modify buffer contents in an editor."""
+        event.current_buffer.open_in_editor()
+
     return kb
