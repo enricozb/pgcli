@@ -7,6 +7,7 @@ Features:
 * Consider `update` queries destructive and issue a warning. Change
   `destructive_warning` setting to `all|moderate|off`, vs `true|false`. (#1239)
 * Skip initial comment in .pg_session even if it doesn't start with '#'
+* Include functions from schemas in search_path. (`Amjith Ramanujam`_)
 
 Bug fixes:
 ----------
@@ -16,6 +17,8 @@ Bug fixes:
 * Fix comments being lost in config when saving a named query. (#1240)
 * Fix IPython magic for ipython-sql >= 0.4.0
 * Fix pager not being used when output format is set to csv. (#1238)
+* Add function literals random, generate_series, generate_subscripts
+* Fix ANSI escape codes in first line make the cli choose expanded output incorrectly
 
 3.1.0
 =====
