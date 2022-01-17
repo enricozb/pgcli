@@ -1,5 +1,18 @@
 TBD
-=====
+===
+
+Features:
+---------
+
+
+Bug fixes:
+----------
+
+* Prompt for password when -W is provided even if there is a password in keychain. Fixes #1307.
+
+
+3.3.0 (2022/01/11)
+==================
 
 Features:
 ---------
@@ -9,6 +22,8 @@ Features:
 
 Bug fixes:
 ----------
+
+* Pin the version of pygments to prevent breaking change
 
 3.2.0
 =====
